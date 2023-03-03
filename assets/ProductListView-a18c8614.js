@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,b as s}from"./index-cd3aacec.js";const c={components:{}},n=s("h2",null,"我是產品頁面",-1),r=[n];function a(_,d,i,p,l,u){return o(),t("div",null,r)}const m=e(c,[["render",a]]);export{m as default};
