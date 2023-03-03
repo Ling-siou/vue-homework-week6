@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,d as s}from"./index-a7f27421.js";const c={components:{}},n=s("h2",null,"我是產品管理頁面",-1),a=[n];function r(_,d,p,i,l,u){return o(),t("div",null,a)}const m=e(c,[["render",r]]);export{m as default};
