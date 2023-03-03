@@ -25,8 +25,7 @@ export default {
   },
   created () {
     const allRouters = this.$router.options.routes
-    const modeRouters = allRouters.find(e => e.path === this.mode)
-    this.userRouters = [modeRouters, ...modeRouters.children]
+    this.userRouters = allRouters.find(e => e.path === this.mode).children
   },
   methods: {
     ifAdminChildren (link) {

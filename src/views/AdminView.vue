@@ -3,9 +3,6 @@
     <h6>管理者登入後能看到的頁面</h6>
     <NavFont :mode="'/admin'" />
     <router-view />
-    <div v-if="isAdminIndex">
-      <h2>後台首頁</h2>
-    </div>
   </div>
 </template>
 
@@ -23,11 +20,6 @@ export default {
       this.$router.push({
         path: '/login'
       })
-    }
-  },
-  computed: {
-    isAdminIndex () {
-      return this.$route.path === '/admin'
     }
   },
   methods: {

@@ -3,9 +3,14 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 const routes = [
   {
     path: '/',
-    name: '首頁',
+    name: 'user',
     component: () => import('../views/HomeView.vue'),
     children: [
+      {
+        path: '',
+        name: '首頁',
+        component: () => import('../views/IndexView.vue')
+      },
       {
         path: 'orders',
         name: '訂單頁',
@@ -25,9 +30,14 @@ const routes = [
   },
   {
     path: '/admin',
-    name: '後台首頁',
+    name: 'admin',
     component: () => import('../views/AdminView.vue'),
     children: [
+      {
+        path: '',
+        name: '後台首頁',
+        component: () => import('../views/DashboardView.vue')
+      },
       {
         path: 'products',
         name: '產品管理列表',

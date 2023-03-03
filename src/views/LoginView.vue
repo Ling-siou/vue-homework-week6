@@ -39,7 +39,7 @@ export default {
           document.cookie = `token=${res.data.token}`
           alert('登入成功')
           this.$router.push({
-            path: '/admin/products'
+            path: '/admin'
           })
         })
         .catch(() => {
